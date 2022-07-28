@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Gochi+Hand&family=Poppins:wght@200;300;400&family=Russo+One&display=swap');
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #067a31;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: red;
+  }
 :root{
     --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
@@ -656,6 +677,8 @@ h3.profession
 .contact .contact-form .form-item textarea.form-control
 {
     height: 140px;
+    resize: none;
+    width: 450px;
 }
 .contact .contact-form .btn
 {

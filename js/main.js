@@ -1,5 +1,5 @@
 var typed = new Typed('.type', {
-    strings: ["Web designer", "UI Designer"],
+    strings: ["Web designer", "UI Designer", "Front-end Developer"],
     typeSpeed: 100,
     BackSpeed:60,
     loop:true
@@ -7,4 +7,4 @@ var typed = new Typed('.type', {
 
 // Gap Animation Area start
 
-const tl = gsap
+const tl = gsap.timeline()
