@@ -152,6 +152,9 @@ ul
     font-family: 'Clicker Script', cursive;
     font-size: 40px;
 }
+#logo-text{
+ display: inline-block;   
+}
 .aside .logo a::before
 {
     content: '';
