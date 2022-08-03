@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Gochi+Hand&family=Poppins:wght@200;300;400&family=Russo+One&display=swap');
 /* width */
 ::-webkit-scrollbar {
@@ -98,20 +99,21 @@ ul
 }
 .btn
 {
+    position: relative;
     font-size: 18px;
     font-weight: 500;
     padding: 12px 35px;
-    color: white;
-    border-radius: 40px;
-    border: none;
+    color: #000000;
+    border-radius: 5px;
     display: inline-block;
     white-space: nowrap;
-    background: var(--skin-color);
+    border: 1px solid var(--skin-color);
     transition: all 0.3s ease;
 }
 .btn:hover
 {
-    transform: scale(1.05);
+    background-color: var(--skin-color);
+    border: 1px solid black;
 }
 /* aside */
 .aside
@@ -154,6 +156,14 @@ ul
 }
 #logo-text{
  display: inline-block;   
+}
+#my-name-area{
+    overflow: hidden;
+    display: inline-block;
+}
+#my-name{
+    display: inline-block;
+    margin-left: 10px;
 }
 .aside .logo a::before
 {
@@ -264,10 +274,12 @@ h3.hello
     font-size: 28px ;
     margin: 15px 0;
     font-family: 'Russo One';
+    display: flex;
+    align-items: center;
 }
 h3.hello span
 {
-    font-family: 'Clicker Script' ,'cursive';
+    font-family: 'Permanent Marker' ,'cursive';
     font-size: 30px;
     font-weight: 900;
     color: var(--skin-color);

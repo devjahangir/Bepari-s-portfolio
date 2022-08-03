@@ -5,7 +5,7 @@ var typed = new Typed('.type', {
     loop:true
   });
 
-// Gap Animation Area start
+// Gsap Animation Area start
 
 const tl = gsap.timeline({defaults:{duration:0.75, ease: Power2.easeOut}})
 
@@ -22,6 +22,8 @@ tl.fromTo(CSSRulePlugin.getRule(".aside .logo a::after"),1,{
 
   }})
 
+ 
+
   tl.fromTo(CSSRulePlugin.getRule(".aside .logo a::before"),1,{
     cssRule:{
       left:"80px",
@@ -34,3 +36,9 @@ tl.fromTo(CSSRulePlugin.getRule(".aside .logo a::after"),1,{
   
     }},"<")
   tl.fromTo("#logo-text",{scale:0},{scale:1},"<15%")
+  tl.fromTo("#my-name",{x:"-110%"},{x:0},">")
+
+  tl.fromTo(".home-imgae",{scale:0},{scale:1},"<15%")
+  tl.fromTo(".home-imgae",{y:"-200%"},{y:0},">")
+
+
