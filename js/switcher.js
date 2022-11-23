@@ -46,3 +46,27 @@ Window.addEventListener("load", () => {
 
     }
 })
+
+
+  function sendMail() {
+    var params = {
+      nam: document.getElementById("nam").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+  
+    const serviceID = "service_ddj49di";
+    const templateID = "template_twslccd";
+  
+      emailjs.send(serviceID, templateID, params)
+      .then(res=>{
+          document.getElementById("nam").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          alert("Your message sent successfully!!")
+  
+      })
+      .catch(err=>console.log(err));
+  
+  }
